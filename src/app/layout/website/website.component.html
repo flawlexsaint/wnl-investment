@@ -7,12 +7,14 @@
   <router-outlet></router-outlet>
   <app-footer></app-footer>
 </div>
-<div class="d-flex justify-content-center my-4 xl_hide">
-  <div>
-    <ng-lottie
-      [options]="options"
-      (animationCreated)="animationCreated($event)"
-    ></ng-lottie>
-    <h1 class="text-center coco-700 f-16 primary">Developing Mobile Screens</h1>
-  </div>
+<div
+  class="d-flex flex-column mobile primary_bg justify-content-end xl_hide"
+>
+  <ng-lottie
+    [options]="options"
+    (animationCreated)="animationCreated($event)"
+  ></ng-lottie>
+  <h1 class="text-center coco-700 mb-5 f-16 text-white">
+    Developing Mobile Screens
+  </h1>
 </div>
