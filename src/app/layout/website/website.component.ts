@@ -13,7 +13,7 @@ export class WebsiteComponent implements OnInit {
   ngOnInit(): void {}
 
   options: AnimationOptions = {
-    path: 'https://assets8.lottiefiles.com/packages/lf20_rK1iJW.json',
+    path: 'https://assets10.lottiefiles.com/private_files/lf30_igfaivqx.json',
   };
 
   animationCreated(animationItem: AnimationItem): void {
