@@ -1,0 +1,97 @@
+.home_bg {
+  background: url("../../../../assets/img/banner.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #071050;
+}
+
+.hero_padding {
+  padding-top: 250px !important;
+}
+
+.hero_right_bg {
+  background: #e0f0fe;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.opportunity_bg {
+  background: #e0f0fe;
+  height: 100%;
+  width: 100%;
+}
+
+.investment_card {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(6, minmax(230px, 1fr));
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.card-img-overlay {
+  top: 70% !important;
+}
+
+.hero_img_border {
+  position: absolute;
+  border: 3px solid #f2f2f2;
+  border-radius: 25px;
+  width: 300px;
+  height: 470px;
+  left: -15%;
+}
+
+.hero_img {
+  position: absolute;
+  height: 500px;
+  top: -25px;
+  left: -15%;
+}
+
+.opportunity_img_border {
+  position: absolute;
+  border: 3px solid #f2f2f2;
+  border-radius: 25px;
+  width: 300px;
+  height: 470px;
+  left: 16%;
+  top: 3%;
+}
+
+.opportunity_img {
+  position: absolute;
+  height: 500px;
+  top: -25px;
+  left: -15%;
+}
+
+.section_padding {
+  padding: 100px 0;
+}
+
+.service_icons {
+  background: #e0f0fe;
+  border-radius: 8px;
+  height: 52px;
+  width: 52px;
+}
+
+.border-top {
+  border-top: 1px solid #353945 !important;
+}
+
+.faq_mute_color {
+  color: #777e91;
+}
+
+.faq_bg {
+  background: #071050;
+}
+
+.investment_bg {
+  background: #f9f9f9;
+  border-radius: 25px;
+}

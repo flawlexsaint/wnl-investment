@@ -1,1 +1,180 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("./app/shared/styles/typography.scss");
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+// Color
+.primary {
+  color: #071050;
+}
+
+.primary_bg {
+  background: #071050;
+}
+
+// Font Family
+.gilroy {
+  font-family: "Gilroy";
+}
+
+.gilroy-500 {
+  font-family: "Gilroy Medium";
+}
+
+.gilroy-600 {
+  font-family: "Gilroy Semibold";
+}
+
+.gilroy-700 {
+  font-family: "Gilroy Bold";
+}
+
+.gilroy-800 {
+  font-family: "Gilroy Extrabold";
+}
+
+.coco {
+  font-family: "Gilroy";
+}
+
+.coco-700 {
+  font-family: "Coco Bold";
+}
+
+.coco-800 {
+  font-family: "Coco Extrabold";
+}
+
+.sans {
+  font-family: "Sans";
+}
+
+.sans-500 {
+  font-family: "Sans Medium";
+}
+
+.sans-700 {
+  font-family: "Sans Bold";
+}
+
+.poppins {
+  font-family: "Poppins";
+}
+
+.raleway {
+  font-family: "Raleway";
+}
+
+.inter {
+  font-family: "Inter";
+}
+
+.mulish {
+  font-family: "Mulish";
+}
+
+// Font Weight
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+// Font Size
+.f-12 {
+  font-size: 12px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-22 {
+  font-size: 22px;
+}
+
+.f-40 {
+  font-size: 40px;
+}
+
+.f-48 {
+  font-size: 48px;
+}
+
+.f-56 {
+  font-size: 56px;
+}
+
+.f-58 {
+  font-size: 58px;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .xs_hide {
+    display: none !important;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .sm_hide {
+    display: none !important;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .md_hide {
+    display: none !important;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .lg_hide {
+    display: none !important;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .xl_hide {
+    display: none !important;
+  }
+}
