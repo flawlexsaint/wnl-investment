@@ -14,15 +14,15 @@ import { DashboardComponent } from './layout/dashboard/dashboard.component';
     AppComponent,
     WebsiteComponent,
     OnboardingComponent,
-    DashboardComponent
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

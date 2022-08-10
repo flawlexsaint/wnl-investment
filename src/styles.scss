@@ -17,6 +17,14 @@ body {
   background: #071050;
 }
 
+.bg-primary {
+  background: #4d7cfe !important;
+}
+
+.text-primary {
+  color: #4d7cfe !important;
+}
+
 // Font Family
 .gilroy {
   font-family: "Gilroy";
@@ -103,7 +111,16 @@ body {
   font-weight: 900;
 }
 
+// Font Style
+.italic {
+  font-style: italic;
+}
+
 // Font Size
+.f-10 {
+  font-size: 10px;
+}
+
 .f-12 {
   font-size: 12px;
 }
@@ -128,6 +145,10 @@ body {
   font-size: 22px;
 }
 
+.f-30 {
+  font-size: 31px;
+}
+
 .f-40 {
   font-size: 40px;
 }
@@ -142,6 +163,19 @@ body {
 
 .f-58 {
   font-size: 58px;
+}
+
+// Dimensions
+.vh_100 {
+  height: 100vh;
+}
+
+.vw_100 {
+  width: 100vw;
+}
+
+.rounded-50 {
+  border-radius: 50%;
 }
 
 // Extra small devices (portrait phones, less than 576px)

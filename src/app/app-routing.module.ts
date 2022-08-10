@@ -1,5 +1,9 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardComponent } from './layout/dashboard/dashboard.component';
+import { LoginComponent } from './layout/onboarding/login/login.component';
+import { OnboardingComponent } from './layout/onboarding/onboarding.component';
+import { SignUpComponent } from './layout/onboarding/sign-up/sign-up.component';
 import { WebsiteComponent } from './layout/website/website.component';
 
 const routes: Routes = [
@@ -19,6 +23,33 @@ const routes: Routes = [
         loadChildren: () =>
           import('./layout/website/about-us/about-us.module').then(
             (m) => m.AboutUsModule
+          ),
+      },
+    ],
+  },
+  {
+    path: 'onboarding',
+    component: OnboardingComponent,
+    children: [
+      {
+        path: 'login',
+        component: LoginComponent,
+      },
+      {
+        path: 'sign-up',
+        component: SignUpComponent,
+      },
+    ],
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./layout/dashboard/index/index.module').then(
+            (m) => m.IndexModule
           ),
       },
     ],
