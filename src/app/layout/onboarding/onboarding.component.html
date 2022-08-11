@@ -1,5 +1,5 @@
 <div class="row xs_hide sm_hide md_hide lg_hide">
-  <div class="col-md-6 position-relative">
+  <div class="col-md-6 px-0 position-relative">
     <div class="onboarding_svg">
       <div class="container py-4">
         <h6 class="inter fw-700 primary italic f-30">WNL</h6>
@@ -18,11 +18,11 @@
       </div>
     </div>
   </div>
-  <div class="col-md-6">
-    <div class="onboarding_bg"></div>
-  </div>
+  <div class="col-md-6 onboarding_bg"></div>
 </div>
-<div class="d-flex flex-column mobile primary_bg justify-content-center xl_hide">
+<div
+  class="d-flex flex-column mobile primary_bg justify-content-center xl_hide"
+>
   <ng-lottie
     [options]="options"
     (animationCreated)="animationCreated($event)"

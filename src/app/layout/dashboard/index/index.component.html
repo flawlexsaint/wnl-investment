@@ -1,1 +1,214 @@
-<p>index works!</p>
+<div class="container my-5">
+  <h4 class="primary gilroy-500 f-32">Dashboard</h4>
+  <div class="alert alert-success mt-4 gilroy-600 f-14 primary" role="alert">
+    Complete your account profile
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-4 mb-4">
+      <div class="balance_bg bg-primary p-4">
+        <div class="d-flex justify-content-between align-items-end">
+          <div>
+            <h5 class="gilroy-600 f-16 text-white">Wallet Balance</h5>
+            <h3 class="gilroy-500 f-40 text-white">N 127,000</h3>
+            <a href="#" class="gilroy-700 f-16 text-white">Fund Wallet</a>
+          </div>
+          <img src="assets/img/hand_icon.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="investment_bg p-4">
+        <div class="d-flex justify-content-between align-items-end">
+          <div>
+            <h5 class="gilroy-600 f-16 text-white">Active Investments</h5>
+            <h3 class="gilroy-500 f-40 text-white">12</h3>
+            <a href="#" class="gilroy-700 f-16 text-white">All Investments</a>
+          </div>
+          <img src="assets/img/check_icon.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="banner_bg p-4">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="mt-4">
+            <h5 class="gilroy-600 f-16 text-white text-center">
+              Get 10% Off on a Referral
+            </h5>
+            <h3 class="gilroy f-14 text-white text-center">
+              Credited once they make a transfer
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-8">
+      <div class="available_investment_bg p-4">
+        <div class="d-flex align-items-center justify-content-between">
+          <h3 class="gilroy-600 primary f-22">Available Investment</h3>
+          <a href="" class="xs_hide">View All</a>
+        </div>
+        <div class="grid_slide mt-4">
+          <div class="card border-0" *ngFor="let item of investments">
+            <img src="{{ item.src }}" alt="" />
+            <div class="card-img-overlay text-white">
+              <h5 class="gilroy-600 f-18">Palm Oil</h5>
+              <h6 class="gilroy f-12">10000 Units/2500NGN</h6>
+              <h6 class="gilroy-700 f-12">Expires:20/03/25</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gain_bg p-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="gilroy-600 f-22 primary">Gain Estimator</h1>
+          <select class="border rounded py-1 px-2 gilroy-500 f-12 primary">
+            <option selected>Palm Oil</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="send_pane d-flex justify-content-between mt-3" matRipple>
+          <div class="ms-2">
+            <label for="">You Invest</label>
+            <input type="number" class="input_field w-100" />
+          </div>
+          <div class="d-flex align-items-center custom_border px-2">
+            <select name="" class="gilroy-700 f-12mprimary bg-transparent">
+              <option selected>APRIL 2022</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <!-- <option *ngFor="let account of wallets">
+                {{ account.currency }}
+              </option> -->
+            </select>
+          </div>
+        </div>
+        <div class="timeline_area position-relative">
+          <div class="d-flex timeline_margin">
+            <span class="dot me-2"></span>
+            <div class="dashed_border d-flex align-items-center p-3">
+              <span class="muted_text ms-2">Into Palm Oil in January 2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline_area position-relative">
+          <div class="d-flex timeline_margin">
+            <span class="dot me-2"></span>
+            <div class="dashed_border d-flex align-items-center p-3">
+              <span class="muted_text ms-2">And make profit </span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline_area position-relative">
+          <div class="d-flex timeline_margin">
+            <span class="dot me-2"></span>
+            <div class="dashed_border d-flex align-items-center p-3">
+              <span class="muted_text ms-2">by December 2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="send_pane d-flex justify-content-between" matRipple>
+          <div class="ms-2 receive">
+            <label for="">You Get</label>
+            <input type="number" class="input_field w-100" />
+          </div>
+          <div class="d-flex align-items-center custom_border px-2">
+            <select name="" class="gilroy-700 f-12mprimary bg-transparent">
+              <option selected>APRIL 2022</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <!-- <option *ngFor="let account of wallets">
+                {{ account.currency }}
+              </option> -->
+            </select>
+          </div>
+        </div>
+        <button
+          class="bg-primary border-0 w-100 py-2 mulish fw-700 f-18 text-white mt-4"
+        >
+          Invest Now
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4 mb-5 pb-5">
+    <div class="d-flex align-items-center justify-content-between p-4">
+      <h1 class="gilroy-600 f-22 primary mb-0">Recent Transactions</h1>
+      <div class="d-flex align-items-center">
+        <select class="border rounded py-1 px-2 gilroy-500 f-12 primary">
+          <option selected>All Investments</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <a routerLink="" class="receive">View All</a>
+      </div>
+    </div>
+    <div class="convert_area">
+      <div class="scroll mobile_hide">
+        <div class="dashboard_grid grid_header px-4 mb-3">
+          <div class="grid_1"><p class="mb-0 gilroy-600 f-12 primary">Date</p></div>
+          <div class="grid_2">
+            <p class="mb-0 gilroy-600 f-12 primary">Investment</p>
+          </div>
+          <div class="grid_3"><p class="mb-0 gilroy-600 f-12 primary">Total Amount</p></div>
+          <div class="grid_4"><p class="mb-0 gilroy-600 f-12 primary">Status</p></div>
+        </div>
+        <div>
+          <div
+            class="dashboard_grid grid_header p-4"
+            [ngClass]="{ striped: item % 2 }"
+            *ngFor="let item of transactions"
+            matRipple
+          >
+            <div class="grid_1">
+              <div class="d-flex align-items-center">
+                <p class="mb-0 gilroy-600 f-12 primary">2/4/2020</p>
+              </div>
+            </div>
+            <div class="grid_2">
+              <div class="d-flex align-items-center">
+                <p class="gilroy-600 f-14">Palm Oil</p>
+              </div>
+            </div>
+            <div class="grid_3">
+              <div class="d-flex align-items-center">
+                <p class="gilroy-600 f-14 me-2">25 Units</p>
+
+                <svg
+                  width="5"
+                  height="9"
+                  viewBox="0 0 5 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.676452 0.172019L4.7224 3.59951C5.09253 3.92464 5.09253 4.42592 4.7224 4.73751L0.676453 8.16494C0.293555 8.49007 -2.61856e-10 8.32751 -2.21722e-08 7.82625L-3.41945e-07 0.510703C-3.64448e-07 -0.00409508 0.293555 -0.153116 0.676452 0.172019Z"
+                    fill="black"
+                  />
+                </svg>
+                <p class="gilroy-600 f-14 ms-2">NGN 62,500</p>
+              </div>
+            </div>
+            <div class="grid_4">
+              <div class="d-flex align-items-center">
+                <button class="completed_btn" *ngIf="item % 2 == 0">
+                  Completed
+                </button>
+                <button class="pending_btn px-4 py-1" *ngIf="item % 2 != 0">
+                  Pending
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
