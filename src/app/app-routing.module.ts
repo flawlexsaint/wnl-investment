@@ -52,6 +52,27 @@ const routes: Routes = [
             (m) => m.IndexModule
           ),
       },
+      {
+        path: 'transaction-history',
+        loadChildren: () =>
+          import(
+            './layout/dashboard/transaction-history/transaction-history.module'
+          ).then((m) => m.TransactionHistoryModule),
+      },
+      {
+        path: 'transaction-history/:id',
+        loadChildren: () =>
+          import(
+            './layout/dashboard/transaction-history/detail/detail.module'
+          ).then((m) => m.DetailModule),
+      },
+      {
+        path: 'account',
+        loadChildren: () =>
+          import('./layout/dashboard/account/account.module').then(
+            (m) => m.AccountModule
+          ),
+      },
     ],
   },
 ];

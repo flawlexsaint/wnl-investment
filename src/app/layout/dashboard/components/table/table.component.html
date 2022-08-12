@@ -1,0 +1,65 @@
+<div class="convert_area">
+  <div class="scroll mobile_hide">
+    <div class="dashboard_grid grid_header px-4 mb-3">
+      <div class="grid_1"><p class="mb-0 gilroy-600 f-12 primary">Date</p></div>
+      <div class="grid_2">
+        <p class="mb-0 gilroy-600 f-12 primary">Investment</p>
+      </div>
+      <div class="grid_3">
+        <p class="mb-0 gilroy-600 f-12 primary">Total Amount</p>
+      </div>
+      <div class="grid_4">
+        <p class="mb-0 gilroy-600 f-12 primary">Status</p>
+      </div>
+    </div>
+    <div>
+      <div
+        class="dashboard_grid cursor grid_header p-4"
+        [ngClass]="{ striped: item % 2 }"
+        *ngFor="let item of transactions"
+        (click)="goto(item)"
+        matRipple
+      >
+        <div class="grid_1">
+          <div class="d-flex align-items-center">
+            <p class="mb-0 gilroy-600 f-12 primary">2/4/2020</p>
+          </div>
+        </div>
+        <div class="grid_2">
+          <div class="d-flex align-items-center">
+            <p class="gilroy-600 mb-0 f-14">Palm Oil</p>
+          </div>
+        </div>
+        <div class="grid_3">
+          <div class="d-flex align-items-center">
+            <p class="gilroy-600 mb-0 f-14 me-2">25 Units</p>
+
+            <svg
+              width="5"
+              height="9"
+              viewBox="0 0 5 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.676452 0.172019L4.7224 3.59951C5.09253 3.92464 5.09253 4.42592 4.7224 4.73751L0.676453 8.16494C0.293555 8.49007 -2.61856e-10 8.32751 -2.21722e-08 7.82625L-3.41945e-07 0.510703C-3.64448e-07 -0.00409508 0.293555 -0.153116 0.676452 0.172019Z"
+                fill="black"
+              />
+            </svg>
+            <p class="gilroy-600 mb-0 f-14 ms-2">NGN 62,500</p>
+          </div>
+        </div>
+        <div class="grid_4">
+          <div class="d-flex align-items-center">
+            <button class="completed_btn" *ngIf="item % 2 == 0">
+              Completed
+            </button>
+            <button class="pending_btn px-4 py-1" *ngIf="item % 2 != 0">
+              Pending
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

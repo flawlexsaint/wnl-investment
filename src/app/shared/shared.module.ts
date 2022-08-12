@@ -11,6 +11,9 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardNavbarComponent } from '../layout/dashboard/components/dashboard-navbar/dashboard-navbar.component';
 import { DashboardFooterComponent } from '../layout/dashboard/components/dashboard-footer/dashboard-footer.component';
+import { TableComponent } from '../layout/dashboard/components/table/table.component';
+import { WalletBalanceCardComponent } from '../layout/dashboard/components/wallet-balance-card/wallet-balance-card.component';
+import { ProfileCardComponent } from '../layout/dashboard/components/profile-card/profile-card.component';
 
 export function playerFactory() {
   return player;
@@ -24,6 +27,9 @@ export function playerFactory() {
     SignUpComponent,
     DashboardNavbarComponent,
     DashboardFooterComponent,
+    TableComponent,
+    WalletBalanceCardComponent,
+    ProfileCardComponent,
   ],
   imports: [
     CommonModule,
@@ -44,6 +50,9 @@ export function playerFactory() {
     SignUpComponent,
     DashboardNavbarComponent,
     DashboardFooterComponent,
+    TableComponent,
+    WalletBalanceCardComponent,
+    ProfileCardComponent,
     LottieModule,
   ],
 })

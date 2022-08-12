@@ -1,0 +1,69 @@
+<div class="container my-5">
+  <div class="d-flex align-items-center justify-content-between">
+    <h1 class="gilroy-600 f-22 primary mb-0">Recent Transactions</h1>
+    <div class="d-flex align-items-center">
+      <select
+        class="border rounded py-1 px-2 gilroy-500 f-12 primary"
+        style="height: 32px"
+      >
+        <option selected>All Investments</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <div
+        class="d-flex align-items-center ms-3 rounded"
+        style="background: #f2f2f2; height: 32px"
+      >
+        <span class="material-symbols-outlined f-16 ms-2"> search </span>
+        <input
+          class="border-0 gilroy-500 f-12 bg-transparent"
+          type="search"
+          name=""
+          id=""
+          placeholder="Search"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-5 col-lg-4">
+      <app-wallet-balance-card></app-wallet-balance-card>
+      <div class="mt-4">
+        <app-profile-card></app-profile-card>
+      </div>
+      <div class="mt-4">
+        <div class="d-flex align-items-center mb-4 justify-content-between">
+          <h4 class="gilroy-600 f-22 primary">Recent Activities</h4>
+          <span
+            class="py-1 px-3 gilroy-500 f-14 text-primary"
+            style="background: rgba(0, 148, 255, 0.2); border-radius: 12px"
+          >
+            <p class="mb-0">3</p>
+          </span>
+        </div>
+        <div
+          class="d-flex justify-content-between p-4"
+          style="
+            background: #f8f8f8;
+            box-shadow: 0px 5px 32px rgba(0, 0, 0, 0.06);
+            border-radius: 10px;
+          "
+          *ngFor="let item of [1, 2, 3]"
+        >
+          <div class="d-flex">
+            <div class="dot rounded mt-1"></div>
+            <div class="ms-3">
+              <h5 class="gilroy f-14">Palm Oil</h5>
+              <p class="gilroy f-18">$32,678,00</p>
+            </div>
+          </div>
+          <p class="gilroy-600 f-12 primary">18min</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 col-lg-8">
+      <app-table></app-table>
+    </div>
+  </div>
+</div>

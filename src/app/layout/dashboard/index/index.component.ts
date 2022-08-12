@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.scss'],
 })
 export class IndexComponent implements OnInit {
-  transactions: Array<any> = [1, 2, 3, 4];
   investments: Array<any> = [
     {
       src: 'assets/img/investment-1.svg',

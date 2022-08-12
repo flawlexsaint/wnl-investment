@@ -1,0 +1,101 @@
+<div class="container my-5">
+  <div class="d-flex align-items-center justify-content-between">
+    <div class="d-flex">
+      <span class="material-symbols-outlined cursor" (click)="back()">
+        chevron_left
+      </span>
+      <div class="ms-3">
+        <h1 class="gilroy-600 f-22 primary">Transaction Detail</h1>
+        <p class="gilroy-700 f-16 mb-0">Refernce: 2344GHTRY</p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center">
+      <button
+        class="border gilroy-500 py-2 px-4 f-12 primary rounded bg-transparent"
+      >
+        Share Details
+      </button>
+      <button
+        class="border px-4 py-2 gilroy-500 ms-3 f-12 primary_bg text-white rounded"
+      >
+        Download
+      </button>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-7 col-lg-8">
+      <div class="container">
+        <h3 class="gilroy-60 primary f-16 pb-3 border-bottom">
+          Your transaction details
+        </h3>
+        <div class="p-4">
+          <div class="row border-bottom">
+            <div class="col-6">
+              <p class="my-2 gilroy-500 f-14">Investment</p>
+            </div>
+            <div class="col-6">
+              <p class="my-2 gilroy f-14">Maize</p>
+            </div>
+          </div>
+          <div class="row border-bottom">
+            <div class="col-6">
+              <p class="my-2 gilroy-500 f-14">Date/Time</p>
+            </div>
+            <div class="col-6">
+              <p class="my-2 gilroy f-14">23-02-22 16:45</p>
+            </div>
+          </div>
+          <div class="row border-bottom">
+            <div class="col-6">
+              <p class="my-2 gilroy-500 f-14">Trade Amount</p>
+            </div>
+            <div class="col-6">
+              <p class="my-2 gilroy f-14">25 Units > 62,500 NGN</p>
+            </div>
+          </div>
+          <div class="row border-bottom">
+            <div class="col-6">
+              <p class="my-2 gilroy-500 f-14">Status</p>
+            </div>
+            <div class="col-6">
+              <p class="my-2 gilroy f-14">
+                <button
+                  class="border-0 gilroy-500 px-3 py-1"
+                  style="
+                    background: rgba(35, 184, 153, 0.2);
+                    border-radius: 4px;
+                    color: #23b899;
+                  "
+                >
+                  Completed
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="row border-bottom">
+            <div class="col-6">
+              <p class="my-2 gilroy-500 f-14">Transaction reference</p>
+            </div>
+            <div class="col-6">
+              <p class="my-2 gilroy f-14">2344GHTRY</p>
+            </div>
+          </div>
+          <div class="row border-bottom">
+            <div class="col-6">
+              <p class="my-2 gilroy-500 f-14">Amount Withdrawn from Wallet</p>
+            </div>
+            <div class="col-6">
+              <p class="my-2 gilroy f-14">N306</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 col-lg-4">
+      <app-wallet-balance-card></app-wallet-balance-card>
+      <div class="mt-4">
+        <app-profile-card></app-profile-card>
+      </div>
+    </div>
+  </div>
+</div>

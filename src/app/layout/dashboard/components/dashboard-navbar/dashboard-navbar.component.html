@@ -4,27 +4,53 @@
       <div
         class="d-flex align-items-center py-3 border-bottom justify-content-between"
       >
-        <a href="#" class="m-0 text-decoration-none text-white italic inter fw-700 f-30 cursor"
+        <a
+          href="#"
+          class="m-0 text-decoration-none text-white italic inter fw-700 f-30 cursor"
           >WNL</a
         >
         <div class="d-flex align-items-center">
-          <img
-            src="assets/img/avatar.svg"
-            class="rounded-50"
-            alt="profile picture"
-          />
-          <div class="ms-3">
-            <h5 class="mb-0 f-16 text-white gilroy-500">Sarah Shaibu</h5>
-            <p class="mb-0 f-10 text-white gilroy-500">My WNL Account</p>
+          <span class="material-symbols-outlined" style="color: #75748b">
+            notifications
+          </span>
+          <div
+            class="d-flex cursor align-items-center ms-4"
+            routerLink="account"
+          >
+            <img
+              src="assets/img/avatar.svg"
+              class="rounded-50"
+              alt="profile picture"
+            />
+            <div class="ms-3">
+              <h5 class="mb-0 f-16 text-white gilroy-500">Sarah Shaibu</h5>
+              <p class="mb-0 f-10 text-white gilroy-500">My WNL Account</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="py-3">
         <div class="d-flex align-items-center">
-          <h6 class="text-white mb-0 f-14 gilroy-500">Dashboard</h6>
-          <h6 class="text-white mb-0 f-14 gilroy-500 ms-4">My Wallet</h6>
-          <h6 class="text-white mb-0 f-14 gilroy-500 ms-4">Investments</h6>
-          <h6 class="text-white mb-0 f-14 gilroy-500 ms-4">History</h6>
+          <h6
+            class="text-white mb-0 f-14 cursor gilroy-500"
+            routerLink="/dashboard"
+            routerLinkActive="active_link"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            Dashboard
+          </h6>
+          <h6 class="text-white mb-0 f-14 cursor gilroy-500 ms-4">My Wallet</h6>
+          <h6 class="text-white mb-0 f-14 cursor gilroy-500 ms-4">
+            Investments
+          </h6>
+          <h6
+            class="text-white mb-0 f-14 cursor gilroy-500 ms-4"
+            routerLink="transaction-history"
+            routerLinkActive="active_link"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            History
+          </h6>
         </div>
       </div>
     </div>

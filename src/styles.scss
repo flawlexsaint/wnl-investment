@@ -145,6 +145,10 @@ body {
   font-size: 22px;
 }
 
+.f-24 {
+  font-size: 24px;
+}
+
 .f-30 {
   font-size: 30px;
 }
@@ -180,6 +184,15 @@ body {
 
 .rounded-50 {
   border-radius: 50%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+input,
+button {
+  outline: none;
 }
 
 // Extra small devices (portrait phones, less than 576px)
