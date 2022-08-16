@@ -1,28 +1,93 @@
-<div class="d-flex align-items-center justify-content-between">
-  <div class="d-flex">
-    <a class="logo" href="#">WNL</a>
-    <div class="d-flex align-items-center ms-5">
-      <a class="nav_items" href="">Invest</a>
-      <a class="nav_items" href="">Opportunities</a>
-      <a class="nav_items" href="/about-us">About</a>
-      <a class="nav_items" href="">FAQs</a>
-      <a class="nav_items" href="">Blog</a>
+<div
+  class="navbar fixed-top d-flex align-items-center justify-content-between py-3 xs_hide sm_hide md_hide"
+>
+  <div class="container">
+    <div class="d-flex">
+      <a class="logo link_light" href="#">WNL</a>
+      <div class="d-flex align-items-center ms-5 xs_hide sm_hide md_hide">
+        <a class="nav_items link_light" href="">Invest</a>
+        <a class="nav_items link_light" href="">Opportunities</a>
+        <a class="nav_items link_light" href="/about-us">About</a>
+        <a class="nav_items link_light" href="">FAQs</a>
+        <a class="nav_items link_light" href="">Blog</a>
+      </div>
+    </div>
+    <div class="d-flex align-items-center me-md-5 xs_hide sm_hide md_hide">
+      <button
+        class="border-0 bg-transparent link_dark inter f-16 fw-600"
+        [routerLink]="['/onboarding/sign-up']"
+      >
+        Register
+      </button>
+      <button
+        class="border-0 bg-transparent link_dark inter f-16 fw-600"
+        [routerLink]="['/onboarding/login']"
+      >
+        Login
+      </button>
     </div>
   </div>
-  <div class="d-flex align-items-center me-md-5">
-    <button
-      class="border-0 bg-transparent inter f-16 fw-600"
-      [routerLink]="['/onboarding/sign-up']"
-      routerLinkActive="router-link-active"
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-light bg-light lg_hide xl_hide"
     >
-      Register
-    </button>
-    <button
-      class="border-0 bg-transparent inter f-16 fw-600"
-      [routerLink]="['/onboarding/login']"
-      routerLinkActive="router-link-active"
-    >
-      Login
-    </button>
+      <div class="container">
+        <a class="logo link_dark" href="#">WNL</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a
+              class="text-decoration-none raleway fw-700 f-16 link_dark my-2 ps-2"
+              aria-current="page"
+              href="#"
+              >Invest</a
+            >
+            <a
+              class="text-decoration-none raleway fw-700 f-16 link_dark my-2 ps-2"
+              href="#"
+              >Opportunities</a
+            >
+            <a
+              class="text-decoration-none raleway fw-700 f-16 link_dark my-2 ps-2"
+              href="/about-us"
+              >About</a
+            >
+            <a
+              class="text-decoration-none raleway fw-700 f-16 link_dark my-2 ps-2"
+              href="#"
+              >FAQs</a
+            >
+            <a
+              class="text-decoration-none raleway fw-700 f-16 link_dark my-2 ps-2"
+              href="#"
+              >Blog</a
+            >
+            <a
+              class="text-decoration-none cursor raleway fw-700 f-16 link_dark my-2 ps-2"
+              [routerLink]="['/onboarding/sign-up']"
+              >Register</a
+            >
+            <a
+              class="text-decoration-none cursor raleway fw-700 f-16 link_dark my-2 ps-2"
+              [routerLink]="['/onboarding/login']"
+              >Login</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
 </div>
