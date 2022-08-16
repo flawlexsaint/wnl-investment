@@ -5,6 +5,11 @@
   height: 100vh;
 }
 
+.overflow_hidden{
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
 .onboarding_svg {
   background: url("../../../assets/img/onboarding_svg.svg");
   background-position: top left;
