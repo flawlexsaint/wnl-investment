@@ -17,17 +17,11 @@
   height: calc(100vh - 120px);
 }
 
-.mobile {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   .content {
-    height: 100%;
-    overflow: scroll !important;
+    height: calc(100vh - 40px);
+    overflow-y: scroll !important;
   }
 }
 
