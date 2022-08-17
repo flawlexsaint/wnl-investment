@@ -73,6 +73,34 @@ const routes: Routes = [
             (m) => m.AccountModule
           ),
       },
+      {
+        path: 'wallet',
+        loadChildren: () =>
+          import('./layout/dashboard/wallet/wallet.module').then(
+            (m) => m.WalletModule
+          ),
+      },
+      {
+        path: 'investment',
+        loadChildren: () =>
+          import('./layout/dashboard/investment/investment.module').then(
+            (m) => m.InvestmentModule
+          ),
+      },
+      {
+        path: 'funding',
+        loadChildren: () =>
+          import('./layout/dashboard/funding/funding.module').then(
+            (m) => m.FundingModule
+          ),
+      },
+      {
+        path: 'withdraw',
+        loadChildren: () =>
+          import('./layout/dashboard/withdraw/withdraw.module').then(
+            (m) => m.WithdrawModule
+          ),
+      },
     ],
   },
 ];

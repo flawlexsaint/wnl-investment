@@ -3,3 +3,8 @@
   height: 8px;
   background: #0094ff;
 }
+
+.scroll_y {
+  overflow-y: scroll;
+  height: calc(100vh - 300px);
+}
