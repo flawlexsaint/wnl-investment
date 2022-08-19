@@ -3,3 +3,10 @@
   box-shadow: 0px 10px 32px rgba(9, 11, 13, 0.1);
   border-radius: 10px;
 }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .f-40 {
+    font-size: 36px !important;
+  }
+}
