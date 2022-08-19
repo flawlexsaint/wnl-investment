@@ -8,3 +8,30 @@
   overflow-y: scroll;
   height: calc(100vh - 300px);
 }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .scroll_y {
+    overflow-y: visible !important;
+    height: 100%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .sm_hide {
+    display: none !important;
+  }
+
+  .p_sm_0 {
+    padding: 0 !important;
+  }
+
+  .pb_sm_0 {
+    padding-bottom: 0 !important;
+  }
+
+  .pt_sm_0 {
+    padding-top: 0 !important;
+  }
+}

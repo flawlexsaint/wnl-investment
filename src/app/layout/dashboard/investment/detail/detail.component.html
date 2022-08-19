@@ -1,0 +1,147 @@
+<div class="container my-5">
+  <div class="d-flex align-items-center block justify-content-between">
+    <div class="d-flex mb-3">
+      <span class="material-symbols-outlined cursor" (click)="back()">
+        chevron_left
+      </span>
+      <div class="ms-3">
+        <h1 class="gilroy-600 f-22 primary">Palm Oil</h1>
+        <p class="gilroy-700 f-16 mb-0">Investment details and monitoring</p>
+      </div>
+    </div>
+    <div class="d-flex mb-3 align-items-center">
+      <button
+        class="border px-4 py-2 gilroy-500 sm_100 f-12 primary_bg text-white rounded"
+      >
+        Invest Now
+      </button>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-8 col-lg-9">
+      <div class="rounded bg-primary p-4">
+        <div class="row">
+          <div class="col-md-4 d-flex justify-content-center border-end">
+            <div class="">
+              <h4 class="gilroy-600 f-16 text-light">Current price rate</h4>
+              <h3 class="mt-4 gilroy-500 f-40 text-white">N 156/Unit</h3>
+              <h5 class="mt-4 gilroy-600 f-14 text-white">
+                Today, 25th July 2022
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center border-end">
+            <div class="">
+              <h4 class="gilroy-600 f-16 text-light">Current price rate</h4>
+              <h3 class="mt-4 gilroy-500 f-40 text-white">N 156/Unit</h3>
+              <h5 class="mt-4 gilroy-600 f-14 text-white">
+                Today, 25th July 2022
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="">
+              <h4 class="gilroy-600 f-16 text-light">Current price rate</h4>
+              <h3 class="mt-4 gilroy-500 f-40 text-white">N 156/Unit</h3>
+              <h5 class="mt-4 gilroy-600 f-14 text-white">
+                Today, 25th July 2022
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+          <div class="rounded primary_bg p-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="gilroy-600 f-16 text-light mb-0">Price History</h3>
+              <select
+                class="border bg-transparent text-light rounded py-1 px-2 gilroy-500 f-12 primary"
+                style="height: 32px"
+              >
+                <option selected>This week</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="">
+                <h3 class="gilroy-500 text-white f-48 mt-3">N 100</h3>
+                <p class="f-12 text-light gilroy-600 mb-0">Lowest price</p>
+              </div>
+              <div class="">
+                <h3 class="gilroy-500 text-white f-48 mt-3">N 500</h3>
+                <p class="f-12 text-light gilroy-600 mb-0">Highest price</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <img src="assets/img/Bitmap.svg" class="card-img rounded" />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3">
+      <div class="card">
+        <h3 class="gilroy-600 primary f-16 ps-4 mb-0 py-2 border-bottom">
+          Withdraw Investment
+        </h3>
+        <div class="p-4">
+          <h4 class="text-uppercase gilroy-600 f-12 primary">How many units</h4>
+          <select
+            class="border rounded py-1 px-2 gilroy-500 f-12 primary w-100 mt-3"
+            style="height: 32px"
+          >
+            <option selected>3 Units</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <div class="d-flex align-items-center justify-content-between mt-4">
+            <p class="gilroy-600 f-14">Amount per unit</p>
+            <p class="gilroy-600 f-14">N150</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="gilroy-600 f-14">Service charge</p>
+            <p class="gilroy-600 f-14">N150</p>
+          </div>
+          <div
+            class="d-flex align-items-center border-top pt-3 justify-content-between"
+          >
+            <p class="gilroy-800 f-14">Total</p>
+            <p class="gilroy-800 f-14">N650</p>
+          </div>
+        </div>
+        <div class="p-4">
+          <button
+            class="bg-primary rounded text-white gilroy-600 f-14 w-100 border-0 py-2"
+            routerLink="/dashboard/funding"
+          >
+            Withdraw to Wallet
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="mt-4">
+      <h4 class="gilroy-600 f-22">Investment Updates</h4>
+      <div class="grid_slide mt-4">
+        <div class="card border-0" *ngFor="let item of investments">
+          <img src="{{ item.src }}" alt="" />
+          <div
+            class="card-img-overlay text-white cursor"
+            routerLink="/dashboard/investment/post/1"
+          >
+            <h6 class="gilroy f-14">
+              The current climate for palm oil sales have skyrocketed due to
+              scarcity last week
+            </h6>
+            <h6 class="gilroy-700 f-12 text-muted">
+              Jun 6, 2020 • 11 mins read
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

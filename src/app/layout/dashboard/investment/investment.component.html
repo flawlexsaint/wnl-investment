@@ -1,1 +1,50 @@
-<p>investment works!</p>
+<div class="container my-5">
+  <h1 class="gilroy-600 f-22 primary">Investments</h1>
+  <div class="d-flex align-items-center mt-4 justify-content-between block">
+    <h4 class="gilroy-500 f-22 primary mb-3">
+      Open Investments Oppourtunities
+    </h4>
+    <div class="d-flex align-items-center mb-3">
+      <select
+        class="border rounded py-1 px-2 gilroy-500 f-12 primary"
+        style="height: 32px"
+      >
+        <option selected>Funding Produce</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <div
+        class="d-flex align-items-center ms-3 rounded"
+        style="background: #f2f2f2; height: 32px"
+      >
+        <span class="material-symbols-outlined f-16 ms-2"> search </span>
+        <input
+          class="border-0 gilroy-500 f-12 bg-transparent"
+          type="search"
+          name=""
+          id=""
+          placeholder="Search"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div
+      class="col-md-6 col-lg-4 col-xl-3 mb-4"
+      *ngFor="let item of investments"
+    >
+      <div class="card border-0">
+        <img src="{{ item.src }}" alt="" />
+        <div
+          class="card-img-overlay text-white cursor"
+          routerLink="/dashboard/investment/2"
+        >
+          <h5 class="gilroy-600 f-18">Palm Oil</h5>
+          <h6 class="gilroy f-12">10000 Units/2500NGN</h6>
+          <h6 class="gilroy-700 f-12">Expires:20/03/25</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

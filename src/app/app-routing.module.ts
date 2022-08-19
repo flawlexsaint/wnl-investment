@@ -88,6 +88,20 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'investment/:id',
+        loadChildren: () =>
+          import('./layout/dashboard/investment/detail/detail.module').then(
+            (m) => m.DetailModule
+          ),
+      },
+      {
+        path: 'investment/post/:id',
+        loadChildren: () =>
+          import('./layout/dashboard/investment/post/post.module').then(
+            (m) => m.PostModule
+          ),
+      },
+      {
         path: 'funding',
         loadChildren: () =>
           import('./layout/dashboard/funding/funding.module').then(

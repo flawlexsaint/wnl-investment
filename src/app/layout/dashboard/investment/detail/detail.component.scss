@@ -1,0 +1,57 @@
+.card {
+  border: 1px solid #071050;
+  box-shadow: 0px 10px 32px rgba(9, 11, 13, 0.1);
+  border-radius: 10px;
+}
+
+.withdraw_card {
+  background: #363f65;
+  box-shadow: 0px 10px 32px rgba(9, 11, 13, 0.1);
+  border-radius: 10px;
+}
+
+.grid_slide {
+  width: 100%;
+  display: grid;
+  overflow-x: scroll;
+  grid-column-gap: 1rem;
+  grid-template-columns: repeat(8, minmax(21%, 1fr));
+}
+
+.slide {
+  border-radius: 7.52381px;
+}
+
+.card-img-overlay {
+  top: 65% !important;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .grid_slide {
+    width: 100%;
+    display: grid;
+    overflow-x: scroll;
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(8, minmax(85%, 1fr));
+  }
+
+  .sm_100{
+    width: 100%;
+  }
+
+  .card-img-overlay {
+    top: 70% !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576.5px) and (max-width: 768px) {
+  .grid_slide {
+    width: 100%;
+    display: grid;
+    overflow-x: scroll;
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(8, minmax(85%, 1fr));
+  }
+}

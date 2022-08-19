@@ -1,1 +1,95 @@
-<p>withdraw works!</p>
+<div class="container my-5">
+  <div class="d-flex align-items-center">
+    <span class="material-symbols-outlined cursor" (click)="goBack()">
+      arrow_back_ios
+    </span>
+    <h1 class="gilroy-600 f-22 primary mb-0 ms-2">Withdraw Funds</h1>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-6 mb-4">
+      <div class="col-md-12">
+        <app-advert-one></app-advert-one>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <app-balance-card></app-balance-card>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="row">
+        <div class="" *ngIf="stepOne">
+          <div class="col-md-12 my-4">
+            <h3 class="gilroy-600 f-12 primary text-uppercase">Send to</h3>
+            <select
+              class="border rounded py-1 px-2 gilroy-500 f-12 primary w-100"
+              style="height: 41px"
+            >
+              <option selected>Select Amount</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-md-12">
+            <h3 class="gilroy-600 f-12 primary text-uppercase">Amount</h3>
+            <input
+              type="number"
+              class="border rounded p-2 gilroy-500 f-12 primary w-100"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="col-md-12">
+            <button
+              (click)="stepOne = false"
+              class="bg-primary gilroy-600 f-14 py-3 mt-4 text-white border-0 rounded w-100"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+        <div class="" *ngIf="!stepOne">
+          <div class="col-md-12 my-4">
+            <div
+              class="d-flex align-items-center cursor border-bottom pb-3"
+              (click)="stepOne = true"
+            >
+              <span class="material-symbols-outlined"> chevron_left </span>
+              <h1 class="gilroy-600 f-16 primary mb-0 ms-2">Back</h1>
+            </div>
+            <div class="p-4">
+              <h3 class="gilroy-500 f-24 primary">
+                Does everything look alright?
+              </h3>
+              <div
+                *ngFor="let item of transactionDetail"
+                class="d-flex mt-4 justify-content-between border-bottom align-items-center"
+              >
+                <p class="my-2 gilroy-500 f-14">{{ item.key }}</p>
+                <p class="my-2 gilroy f-14">{{ item.value }}</p>
+              </div>
+
+              <div
+                class="d-flex justify-content-between border-bottom align-items-center mt-3"
+              >
+                <p class="my-2 gilroy-800 f-14">Total</p>
+                <p class="my-2 gilroy-800 f-14">N25,050</p>
+              </div>
+              <div class="col-md-12">
+                <button
+                  class="bg-primary gilroy-600 f-14 py-3 mt-4 text-white border-0 rounded w-100"
+                >
+                  Withdraw
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="col-md-12 my-4">
+        <img src="assets/img/Ads.svg" class="w-100" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
